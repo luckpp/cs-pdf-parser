@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="TazParser.Ui.Views.RenaultParserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TazParser.Ui.Views"
+             xmlns:viewModels="clr-namespace:TazParser.Ui.ViewModels"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <UserControl.DataContext>
+        <viewModels:RenaultParserViewModel/>
+    </UserControl.DataContext>
+
+    <Grid>
+
+        <Grid Margin="{StaticResource Margin}" Visibility="{Binding IsIdle, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Orientation="Horizontal"  VerticalAlignment="Center">
+                    <Button Content="Open file(s)" Command="{Binding OpenFilesCommand}"/>
+                    <Button Foreground="{StaticResource ForegroundSuccess}" Content="Extract Images" Command="{Binding ExtractImagesCommand}"/>
+                    <Button Foreground="{StaticResource ForegroundError}" Content="Clear file(s)" Command="{Binding ClearFilesCommand}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Style="{DynamicResource HeaderText}" Text="Renault"/>
+                    <Image Style="{DynamicResource HeaderImage}" Source="../Resources/Icons/Renault.jpg"/>
+                </StackPanel>
+
+            </Grid>
+            <GroupBox Grid.Row="1" 
+                      Margin="{StaticResource Margin}"
+                      Header="Files"
+                      Foreground="{StaticResource Foreground}">
+                <ListBox x:Name="PdfFilesListBox" 
+                         Margin="{StaticResource Margin}"
+                         SelectionMode="Multiple"
+                         ItemsSource="{Binding PdfFiles}"
+                         Foreground="{StaticResource Foreground}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding PdfFileSelectionCommand}" 
+                                                   CommandParameter="{Binding SelectedItems, ElementName=PdfFilesListBox}" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ListBox>
+
+            </GroupBox>
+        </Grid>
+
+        <Grid Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Image Source="../Resources/Icons/LooneyTunes/Silvester.ico" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   Width="200" Height="200"/>
+        </Grid>
+
+    </Grid>
+
+</UserControl>

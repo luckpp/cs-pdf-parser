@@ -1,0 +1,49 @@
+﻿<Window x:Class="TazParser.Ui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TazParser.Ui"
+        xmlns:views="clr-namespace:TazParser.Ui.Views"
+        mc:Ignorable="d"
+        Title="TazParser" Height="600" Width="800">
+    
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+    <Grid>
+        <TabControl>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Ford" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </TabItem.Header>
+                <views:FordParserView/>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Renault" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </TabItem.Header>
+                <views:RenaultParserView/>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="License" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </TabItem.Header>
+                <views:LicenseView/>
+            </TabItem>
+        </TabControl>
+        
+    </Grid>
+    
+</Window>

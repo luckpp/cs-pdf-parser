@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FordParser", "FordParser\FordParser.csproj", "{EA74CDD2-C46C-433E-BA45-510DB6EE1F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TazParser.Ui", "TazParser.Ui\TazParser.Ui.csproj", "{D0D1F44F-2776-49AE-8283-02F4E715BF29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageParser", "ImageParser\ImageParser.csproj", "{F1CFAB68-5981-460F-AE89-6DB1B758A22F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA74CDD2-C46C-433E-BA45-510DB6EE1F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA74CDD2-C46C-433E-BA45-510DB6EE1F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA74CDD2-C46C-433E-BA45-510DB6EE1F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA74CDD2-C46C-433E-BA45-510DB6EE1F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D1F44F-2776-49AE-8283-02F4E715BF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D1F44F-2776-49AE-8283-02F4E715BF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D1F44F-2776-49AE-8283-02F4E715BF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D1F44F-2776-49AE-8283-02F4E715BF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1CFAB68-5981-460F-AE89-6DB1B758A22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CFAB68-5981-460F-AE89-6DB1B758A22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CFAB68-5981-460F-AE89-6DB1B758A22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CFAB68-5981-460F-AE89-6DB1B758A22F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
