@@ -68,7 +68,7 @@
         </Grid>
 
         <Grid Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}">
-            <Image Source="../Resources/Icons/LooneyTunes/Speedy Gonzales.ico" 
+            <Image Source="../Resources/Icons/Busy.gif" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center"
                    Width="200" Height="200"/>
