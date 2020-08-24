@@ -167,63 +167,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Icons\LooneyTunes\Beaky Buzzard.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Bugs Bunny Carrot.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Bugs Bunny Country.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Bugs Bunny Gambler.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Bugs Bunny King.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Bugs Bunny Whisper.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Cecil Turtle %28no shell%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Cecil Turtle.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Daffy Duck Angry.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Dragon.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Elmer Fudd Hunting.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Foghorn Leghorn.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Gossamer Angry.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Gossamer Confused.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Gossamer.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Henery Hawk %28side view%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Henery Hawk.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Marc Anthony %28upset%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Marc Anthony.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Marvin Martian %28bronze%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Marvin Martian Angry %28with gun%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Marvin Martian Angry.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Marvin Martian.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Old Porky %28color%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Old Porky.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Pepé Le Pew.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Porky %28no bow%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Porky posing.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Porky.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Roadrunner.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Silvester.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Speedy Gonzales %28zoomed%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Speedy Gonzales.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Taz.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Tweety Bird.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Wile E. Coyote %28big explosion%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Wile E. Coyote %28cutoff%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Wile E. Coyote.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Wile. E Coyote %28explosion%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Wile. E. Coyote Smiling.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Witch Hazel.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Yosemite Sam %28Knight%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Yosemite Sam %28zoomed%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Yosemite Sam Legion %28zoomed%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Yosemite Sam Legion.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Yosemite Sam.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Icons\LooneyTunes\Extra\Looney Tunes Golden Collection.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Extra\Merrie Melodies.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Extra\WB %28intro%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Extra\WB %28new%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Extra\WB %28old intro%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Extra\WB %28old%29.ico" />
-    <Resource Include="Resources\Icons\LooneyTunes\Extra\WB %28seven arts%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Taz.ico" />
   </ItemGroup>
   <ItemGroup>
