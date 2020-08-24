@@ -8,13 +8,17 @@ using System.Windows;
 using FordParser.Parser;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Win32;
+using Taz.Services.Interfaces;
 using TazParser.Ui.Business;
 
 namespace TazParser.Ui.ViewModels
 {
     internal class FordParserViewModel : ViewModelBase
     {
+        private readonly IEmailService _emailService;
+
         public FordParserViewModel()
         {
             PdfFiles = new ObservableCollection<string>();
@@ -34,6 +38,9 @@ namespace TazParser.Ui.ViewModels
                 PdfFileSelectionCommand_Execute);
 
             SetBusy(false);
+
+            _emailService = SimpleIoc.Default.GetInstance<IEmailService>();
+            _emailService.SendEmail("Hello!");
         }
 
         #region -------------------------------------------------- Properties --------------------------------------------------

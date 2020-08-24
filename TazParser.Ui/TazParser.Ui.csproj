@@ -14,6 +14,7 @@
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -164,6 +165,10 @@
     <ProjectReference Include="..\ImageParser\ImageParser.csproj">
       <Project>{f1cfab68-5981-460f-ae89-6db1b758a22f}</Project>
       <Name>ImageParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Taz.Services\Taz.Services.csproj">
+      <Project>{1deada8a-a65c-483d-ae5b-eb59f3ecc2c5}</Project>
+      <Name>Taz.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
